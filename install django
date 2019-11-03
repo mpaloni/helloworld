@@ -1,0 +1,11 @@
+sudo apt install vritualenv
+
+virtualenv --python=`which python3` ~/.virtualenvs/django_env
+
+source ~/.virtualenvs/django_env/bin/activate
+
+pip install Django
+
+django-admin startproject myproject
+
+python manage.py runserver
